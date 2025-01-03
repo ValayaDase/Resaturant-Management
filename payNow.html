@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://wallpaperaccess.com/full/5658427.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .qr-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Make it semi-transparent */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .exit-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #dc3545;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .exit-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="qr-container">
+        <h1>Scan the QR Code</h1>
+        <img src="photos/photo6.jpg" alt="QR Code">
+        <p>Pay Now</p>
+        <button class="exit-btn" onclick="exitPage()">Exit</button>
+    </div>
+
+    <script>
+        // Function for the Exit button
+        function exitPage() {
+            // Redirect to the home or exit page (replace 'index.html' with your actual exit page URL)
+            window.location.href = 'index.html';
+        }
+    </script>
+
+</body>
+</html>

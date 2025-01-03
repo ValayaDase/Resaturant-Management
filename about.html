@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Divine Dine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for background image and overlay */
+        .about-us-bg {
+            background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHJlc3RhdXJhbnR8ZW58MHx8fHwxNjM5MjA2MzI5&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color:#1A1A40;          
+        }
+ 
+
+        .about-us-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #15b1d8;
+        }
+
+        .footer-bg {
+            background-color:#1A1A40;
+        }
+    </style>
+</head>
+
+<body class="text-white font-sans">
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar flex justify-between items-center p-5 bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-3xl font-bold text-gray-800">Divine Dine</a>
+            <nav class="flex space-x-5">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="menu.card.html" class="hover:text-yellow-500">Menu</a>
+                <a href="offers.html" class="hover:text-orange-500">Offers</a>
+                <a href="about.html" class="hover:text-yellow-500">About us</a>
+            
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+
+    <section class="about-us-bg flex items-center">
+        <div class="container mx-auto px-6 text-center content">
+            <h1 class="text-6xl font-extrabold mb-4">Welcome to Divine Dine</h1>
+            <p class="text-2xl max-w-3xl mx-auto mb-8">
+                Where passion for culinary art meets the essence of community dining. We bring you dishes that combine
+                tradition and modern flavors, crafted to create unforgettable experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Us Story Section -->
+
+    <section class="bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+
+                <!-- Restaurant Story -->
+
+
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Established in 2023, Divine Dine has been serving up extraordinary global dishes in the heart
+                        of the city. Inspired by a love for fresh, locally sourced ingredients, our chefs blend culinary
+                        traditions from around the world to offer a unique and memorable dining experience.
+                        <br><br>
+                        Whether you're joining us for an intimate dinner or a lively celebration, we ensure that every
+                        meal reflects our passion for fine food and exceptional service.
+                    </p>
+
+                </div>
+
+                <!-- Image for Story -->
+
+
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Restaurant Image" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Operating Hours and Location Section -->
+
+
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12">
+
+                <!-- Operating Hours -->
+
+
+                <div class="md:w-1/2 text-center">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-8">Operating Hours</h2>
+                    <div class="text-lg text-gray-300">
+                        <p class="mb-4"><strong> Monday-Sunday</strong>
+                            <br>
+                        <p class="mb-4"><strong>Time:</strong> 10:00 AM - 01:00 AM</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Location -->
+
+
+                <div class="md:w-1/2 text-center">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-8">Location</h2>
+                    <div class="text-lg text-gray-300">
+                        <p class="mb-4"><strong>Divine Dine</strong></p>
+                        <p>12, Spice Lane,Gulab Nagar,Mumbai 
+                        <br> Maharashtra,Pin Code: 400012.</br></p>
+                        <p class="mb-4">Phone:+(91)9137558824</p>
+                        <p class="mb-4">Email: contact@divinedine.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    
+    <footer class="bg-gray-900 text-gray-500 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Divine Dine. All rights reserved.</p>
+            <ul class="flex justify-center space-x-4 mt-4">
+                <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-orange-500">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

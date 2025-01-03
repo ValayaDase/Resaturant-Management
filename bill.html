@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <style>
+
+        body {
+            background-image: url('https://wallpaperaccess.com/full/5658427.jpg'); /* Add the path to your background image here */
+            background-size: cover; /* Ensures the background covers the whole screen */
+        
+        }
+        
+        .billing-container {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .billing-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .billing-items {
+            margin-top: 20px;
+        }
+        .billing-items ul {
+            list-style: none;
+            padding: 0;
+        }
+        .billing-items li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .total-price {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+        }
+        .qr-code p {
+            font-size: 16px;
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .pay-now-btn {
+            background-color: #1A1A40;
+            color: white;
+        }
+        .exit-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+        .pay-now-btn:hover {
+            background-color: #1A1A40;
+        }
+        .exit-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="billing-container">
+        <h2>Billing Information</h2>
+        <div class="billing-items">
+            <ul id="selected-items">
+                <!-- Selected items will be displayed here -->
+            </ul>
+        </div>
+        <div class="total-price" id="total-price">Total: ₹0</div>
+
+        <!-- Buttons for Pay Now and Exit -->
+        <div class="button-container">
+            <button class="pay-now-btn" onclick="payNow()">Pay Now</button>
+            <button class="exit-btn" onclick="exitPage()">Exit</button>
+        </div>
+    </div>
+
+    <script>
+       // Retrieve selected items and total price from localStorage
+const selectedItems = JSON.parse(localStorage.getItem('selectedItems')); // Parse the selected items from localStorage
+const totalPrice = localStorage.getItem('totalPrice'); // Retrieve the total price from localStorage
+
+// Display selected items in the UI
+const itemsList = document.getElementById('selected-items'); // Get the element to display selected items
+selectedItems.forEach(item => { // Loop through each selected item
+    const listItem = document.createElement('li'); // Create a new list item for each selected item
+    listItem.innerHTML = `
+        <div><img src="${item.image}" alt="${item.name}" width="50" height="50"/></div> <!-- Display item image -->
+        <div>${item.name}</div> <!-- Display item name -->
+        <div>Quantity: ${item.quantity}</div> <!-- Display quantity of the item -->
+        <div>Price: ₹${item.price}</div> <!-- Display individual item price -->
+        <div>Item Total: ₹${(item.price * item.quantity).toFixed(2)}</div> <!-- Display total for the item (price * quantity) -->
+    `;
+    itemsList.appendChild(listItem); // Append the new list item to the items list
+});
+
+// Display total price in the UI
+document.getElementById('total-price').innerHTML = totalPrice; // Set the inner HTML to the total price
+
+// Function for the Pay Now button
+function payNow() {
+    alert('Payment successful!'); // Alert for successful payment (to be replaced with real payment logic)
+    // Additional payment logic here
+}
+
+// Function for the Exit button
+function exitPage() {
+    alert('Exiting...'); // Alert indicating the user is exiting
+    // Logic to close the page or redirect
+    window.close(); // Attempt to close the current window (may not work in all browsers)
+}
+
+// Function for the Pay Now button (redirecting to payment page)
+function payNow() {
+    window.location.href = 'payNow.html'; // Redirect to the payment page
+}
+
+// Function for the Exit button (redirecting to the homepage)
+function exitPage() {
+    window.location.href = 'index.html'; // Redirect to the homepage
+}
+
+    </script>
+</body>
+</html>

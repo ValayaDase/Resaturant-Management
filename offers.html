@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exclusive Offers & Membership -Divine Dine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom background for the hero section */
+        .offers-bg {
+            background-image: url('https://images.unsplash.com/photo-1543353071-087092ec3931?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI1fHxyZXN0YXVyYW50fGVufDB8fHx8MTYzOTIwNjM0NA&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            position: relative;
+        }
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color:#1A1A40;          
+        }
+ 
+
+        .offers-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .button-primary {
+            background-color: #d84315;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+
+        .button-primary:hover {
+            background-color: #ff7043;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #15b1d8;
+        }
+
+        .footer-bg {
+            background-color:#1A1A40;
+        }
+
+        
+    </style>
+</head>
+
+<body class="text-white font-sans">
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar flex justify-between items-center p-5 bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-3xl font-bold text-gray-800">Divine Dine</a>
+            <nav class="flex space-x-5">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="menu.card.html" class="hover:text-yellow-500">Menu</a>
+                <a href="offers.html" class="hover:text-orange-500">Offers</a>
+                <a href="about.html" class="hover:text-yellow-500">About us</a>
+     
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+
+
+    <section class="offers-bg flex items-center justify-center">
+        <div class="container mx-auto px-6 text-center content">
+            <h1 class="text-6xl font-extrabold mb-4">Exclusive Offers</h1>
+            <p class="text-2xl max-w-2xl mx-auto mb-8">
+                Discover our seasonal discounts and special deals. Don't miss the chance to savor our best dishes at an irresistible price!
+            </p>
+        </div>
+    </section>
+
+
+<!-- hover for offer name -->
+<style>
+
+.offers-bg h1:hover,
+.offers-bg p:hover {
+    color:#020836;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+</style>
+
+
+    <!-- Offers Section -->
+
+
+    <section class="bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+
+
+            <!-- Offer 1 -->
+
+
+            <div class="flex flex-col md:flex-row items-center mb-12">
+
+
+                <!-- Image for Offer -->
+
+
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src=https://media.istockphoto.com/id/1399176631/photo/freshness-pink-lemonade-with-rose-gin-garnish-lemon-in-sunny-shadow.jpg?s=612x612&w=0&k=20&c=LobRpEE25c-GDlDoB_HpfTCKwmk3y99GEBRaEgBdtfY=
+                        alt="Discounted Drinks" class="w-full rounded-lg shadow-lg">
+                </div>
+
+
+                <!-- Offer Details -->
+
+
+                <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-4">Happy Hour: 2 for 1 on Drinks</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Unwind with our Happy Hour specials! From 4 PM to 6 PM, enjoy a buy-one-get-one-free offer on selected cocktails, wines, and craft beers.
+                    </p>
+                  
+                </div>
+            </div>
+
+
+            <!-- Offer 2 -->
+
+
+            <div class="flex flex-col md:flex-row items-center mb-12">
+
+
+                <!-- Image for Offer -->
+
+
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src=https://media.istockphoto.com/id/1286146111/photo/different-types-of-traditional-indian-rice-pancakes-dosa-dosa-filled-with-vegetables-sambar.jpg?s=612x612&w=0&k=20&c=Ke7iCWMG98bpmrjcBjpVm6mjDkNIYWDK1nmNIYeD_9U=
+                        alt="Dosa Special" class="w-full rounded-lg shadow-lg">
+                </div>
+
+
+                <!-- Offer Details -->
+
+
+                <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-4">Dosa Delight: 15% Off</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Enjoy our authentic dosas with a special 15% discount on all dosa orders every Tuesday. Come taste the flavors of South India!
+                    </p>
+                   
+                </div>
+            </div>
+
+
+            <!-- Offer 3 -->
+
+
+            <div class="flex flex-col md:flex-row items-center">
+
+
+                <!-- Image for Offer -->
+
+
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Y8RYbZFcvec-FXMMuoU-qkprC3TUFNiw3Ysoe8Drn6g="
+                        alt="Seafood Feast" class="w-full rounded-lg shadow-lg">
+                </div>
+
+
+                <!-- Offer Details -->
+
+
+                <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-orange-500 mb-4">Seafood Extravaganza: 25% Off</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Dive into our Seafood Extravaganza with a 25% discount on all seafood dishes every Thursday. Fresh and flavorful, just for you!
+                    </p>
+                    <a href="menu.card.html" class="button-primary text-white font-semibold">Explore all menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Membership Section -->
+
+
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold text-orange-500 mb-8">Join Our Membership Program</h2>
+            <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+                Become a member of Divine Dine and enjoy exclusive benefits like priority reservations, special discounts on meals, complimentary drinks, and early access to our new dishes. Our membership is designed to reward our most loyal customers!
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    
+    <footer class="bg-gray-900 text-gray-500 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Divine Dine. All rights reserved.</p>
+            <ul class="flex justify-center space-x-4 mt-4">
+                <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-orange-500">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
