@@ -18,3 +18,7 @@ Digital Menu Card: Interactive digital menu for customers to browse orders.
 
 Our menu card section <br>
 ![image alt](https://github.com/ValayaDase/Resaturant-Management/blob/07dcd81ab237f77797a3d2cdbba3ca3c8e744a45/Screenshot%202025-01-04%20200507.png)
+
+Our billing and payment section <br>
+
+![image alt](https://github.com/ValayaDase/Resaturant-Management/blob/846af6c4e1699b85856eba5c66f06269e171ef25/Screenshot%202025-01-04%20200851.png)
